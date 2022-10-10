@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
   Link,
-  useNavigate
+  useNavigate,
 } from "react-router-dom";
 
 import GalleryList from "./GalleryList";
@@ -50,7 +50,7 @@ import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import LogoutIcon from "@mui/icons-material/Logout";
 
-import SideMenu from "../component/SideMenu";
+//import SideMenu from "../component/SideMenu";
 
 import { ThemeProvider } from "@mui/material";
 import { appTheme } from "./themes/theme";
@@ -94,7 +94,7 @@ export default function App(props: Props) {
           { text: "CreateGallery", icon: "" },
           { text: "CreateEvent", icon: "" },
           { text: "ModelList", icon: "Dashboard" },
-          { text: "Logout", icon: "Logout" }
+          { text: "Logout", icon: "Logout" },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton component={Link} to={item.text} onClick={clickLink}>
@@ -135,7 +135,7 @@ export default function App(props: Props) {
             position="fixed"
             sx={{
               width: { sm: `calc(100% - ${drawerWidth}px)` },
-              ml: { sm: `${drawerWidth}px` }
+              ml: { sm: `${drawerWidth}px` },
             }}
           >
             <Toolbar>
@@ -163,14 +163,14 @@ export default function App(props: Props) {
               open={mobileOpen}
               onClose={handleDrawerToggle}
               ModalProps={{
-                keepMounted: true // Better open performance on mobile.
+                keepMounted: true, // Better open performance on mobile.
               }}
               sx={{
                 display: { xs: "block", sm: "none" },
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
-                  width: drawerWidth
-                }
+                  width: drawerWidth,
+                },
               }}
             >
               {drawer}
@@ -181,8 +181,8 @@ export default function App(props: Props) {
                 display: { xs: "none", sm: "block" },
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
-                  width: drawerWidth
-                }
+                  width: drawerWidth,
+                },
               }}
               open
             >
@@ -194,7 +194,7 @@ export default function App(props: Props) {
             sx={{
               flexGrow: 1,
               p: 3,
-              width: { sm: `calc(100% - ${drawerWidth}px)` }
+              width: { sm: `calc(100% - ${drawerWidth}px)` },
             }}
             className="card"
           >
@@ -246,4 +246,3 @@ export default function App(props: Props) {
     </ThemeProvider>
   );
 }
-export default App;

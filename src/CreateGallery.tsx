@@ -29,7 +29,7 @@ const GalleryList = () => {
   ) => {
     // data for submit
     console.log(imageList, addUpdateIndex);
-    setImages(imageList as never[]);
+    //setImages(imageList as never[]);
   };
 
   return (
@@ -54,7 +54,7 @@ const GalleryList = () => {
               onImageUpdate,
               onImageRemove,
               isDragging,
-              dragProps
+              dragProps,
             }) => (
               // write your building UI
               <div className="upload__image-wrapper">

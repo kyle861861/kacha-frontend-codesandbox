@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import placeholderSrc from "../../../public/loading/image_processing.gif";
+import placeholderSrc from "../../image/image_processing.gif";
 
 const ProgressiveImg = ({ src, ...props }) => {
   const [imgSrc, setImgSrc] = useState(placeholderSrc || src);
