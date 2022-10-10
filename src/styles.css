@@ -1,0 +1,58 @@
+.appbar-menu-btn {
+  color: #ffffff !important;
+}
+
+.card {
+  padding: 10px 0px 100px 0px !important;
+}
+
+.card-content {
+  padding: 10px 5px !important;
+}
+
+.card-action {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.card-action-item {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.post-card-img {
+  margin: 0px 0px !important;
+  object-fit: cover !important;
+}
+
+button {
+  padding: 10px 20px !important ;
+  font-size: 1rem !important;
+  border-radius: 50px !important;
+}
+
+.white-font-btn {
+  color: #ffffff !important;
+}
+
+/* Image loading css */
+.loading {
+  filter: blur(3px);
+  clip-path: inset(0);
+  object-fit: contain;
+}
+
+.loaded {
+  filter: blur(0px);
+  transition: filter 0.5s linear;
+}
+
+.center-container {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
