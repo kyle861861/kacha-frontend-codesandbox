@@ -246,4 +246,4 @@ export default function App(props: Props) {
     </ThemeProvider>
   );
 }
-export default App;
+
