@@ -50,7 +50,7 @@ import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import LogoutIcon from "@mui/icons-material/Logout";
 
-import SideMenu from "../component/SideMenu";
+//import SideMenu from "../component/SideMenu";
 
 import { ThemeProvider } from "@mui/material";
 import { appTheme } from "./themes/theme";
